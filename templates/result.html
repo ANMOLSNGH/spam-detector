@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="container-box text-center">
+
+    <h2 class="mb-3">Prediction Result</h2>
+
+    <p><strong>Message:</strong> {{ message }}</p>
+
+    <h3 style="color: {{ color }};">{{ result }}</h3>
+
+    <a href="/" class="btn btn-dark w-100 mt-4">Try Another Message</a>
+</div>
+
+{% endblock %}

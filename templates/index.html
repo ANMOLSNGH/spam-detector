@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="container-box">
+    <h1 class="text-center mb-4">SMS / Email Spam Detector</h1>
+
+    <form action="/predict" method="POST">
+        <label class="form-label">Enter your message:</label>
+        <textarea name="message" class="form-control" rows="4" required></textarea>
+
+        <button class="btn btn-dark w-100 mt-3">Check</button>
+    </form>
+</div>
+
+{% endblock %}
